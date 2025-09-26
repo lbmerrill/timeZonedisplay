@@ -27,9 +27,11 @@ const moonset = moonTimes.set;
 console.log(`Current Time Zone: ${timeZone}`);
 console.log(`Current Date and Time: ${formattedDate}`);
 console.log(`Current UTC Date and Time: ${utcDateTime}`);
+console.log('------------------------------');
 console.log('Sunrise Time: ' + sunrise.toLocaleTimeString('en-US', { timeZone }));
-console.log('Sunset Time: ' + sunset.toLocaleTimeString('en-US', { timeZone }));
 
+console.log('Sunset Time: ' + sunset.toLocaleTimeString('en-US', { timeZone }));
+console.log('------------------------------');
 if (moonrise) {
     console.log('Moonrise Time: ' + moonrise.toLocaleTimeString('en-US', { timeZone }));
 } else {
@@ -41,7 +43,7 @@ if (moonset) {
 } else {
     console.log('Moonset Time: Not today at this location');
 }
-if (isDST) {
+console.log('------------------------------');if (isDST) {
     console.log(`In Daylight Saving Time (DST)`);
 } else {
     console.log(`Not in Daylight Saving Time (DST)`);
