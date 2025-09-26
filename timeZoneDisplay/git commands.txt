@@ -1,0 +1,7 @@
+git add timeZoneDisplay/timeZoneDisplay.js
+
+git commit -m "Add sun and moon rise and set times"
+
+git fetch origin master
+
+git push origin master
